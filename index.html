@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="hello world ";
+        // let b="biscuit"
+        // console.log(str.concat(b))
+
+        // let stra="vishal is good boy";
+        // let c=stra.split(",")
+        // console.log(c);
+
+        // let d="no";
+        // let e=d.replace("no","yes")
+        // console.log(e);
+
+        //Uppercase
+        let a=prompt("Enter a name in lowercase");
+        console.log(a.toUpperCase());
+        
+        //Lowercase
+        let b=prompt("Enter a name in uppercase");
+        console.log(b.toLowerCase());
+
+        //reverse a string
+        let c=prompt("Enter a string");
+        let d=c.split("").reverse().join("");
+        console.log(d);
+
+        //Email formatter
+        let first=prompt("Enter your first name");
+        let last=prompt("Enter your last name");
+        let dot=".";
+        let com=first.concat(dot,last);
+        console.log(com.concat(".@gmail.com").toLowerCase());
+
+        //word Counter
+        let word=prompt("Enter a sentence");
+        let wr=word.split(" ");
+        let count=wr.length;
+        console.log("The sentence contains " + count + " words.");
+        
+        //Username Validation
+        let user=prompt("enter your username");
+        if (user.length>5 && user.length<=15 ) {
+            console.log(user+" username is vaild");
+        }
+        else{
+            console.log(user+" username is not vaild");
+        }
+        
+        // Palindrome Checker
+        let che=prompt("to check it is a palindrome or not");
+        let chec=che.split("").reverse().join("");
+       
+        if(chec.toLowerCase()==che.toLowerCase()){
+            console.log(che + " is a Palindrome")
+        }
+        else{
+            console.log(che + " is not a Palindrome")
+        }
+
+
+        
+
+
+        
+        
+        
+    </script>
+</body>
+</html>
